@@ -1,0 +1,104 @@
+HelixDB/
+│
+├── README.md
+├── LICENSE
+├── file_structure.txt
+├── helixdb.config.json.example
+│
+├── cmd/
+│   └── helixdb/
+│       ├── main.go
+│       └── commands.go
+│       # Entry point for the HelixDB server binary.
+│       # Contains CLI parsing, startup logic, and config loading.
+│
+├── internal/
+│   ├── server/
+│   │   ├── http.go
+│   │   ├── routes.go
+│   │   └── middleware.go
+│   │   # HTTP server, routing, and request handling.
+│   │
+│   ├── storage/
+│   │   ├── engine.go
+│   │   ├── wal.go
+│   │   ├── segments.go
+│   │   ├── compaction.go
+│   │   ├── recovery.go
+│   │   └── checksums.go
+│   │   # Core database engine:
+│   │   # - Write-ahead log
+│   │   # - Segment files
+│   │   # - Compaction
+│   │   # - Crash recovery
+│   │   # - Corruption detection
+│   │
+│   ├── indexing/
+│   │   ├── index.go
+│   │   ├── btree.go
+│   │   └── query.go
+│   │   # Secondary indexes and query execution.
+│   │
+│   ├── backup/
+│   │   ├── snapshot.go
+│   │   ├── incremental.go
+│   │   └── scheduler.go
+│   │   # Backup and restore logic.
+│   │
+│   ├── config/
+│   │   ├── loader.go
+│   │   └── schema.go
+│   │   # Loads and validates helixdb.config.json.
+│   │
+│   └── logging/
+│       ├── logger.go
+│       └── rotate.go
+│       # Logging utilities and file rotation.
+│
+├── api/
+│   ├── openapi.yaml
+│   └── examples/
+│       ├── create_document.json
+│       ├── query.json
+│       └── delete_document.json
+│   # API documentation and example payloads.
+│
+├── clients/
+│   ├── node/
+│   │   ├── package.json
+│   │   ├── index.js
+│   │   └── README.md
+│   │   # Official Node.js client library.
+│   │
+│   └── python/
+│       ├── helixdb/
+│       │   ├── __init__.py
+│       │   ├── client.py
+│       │   └── collection.py
+│       ├── pyproject.toml
+│       └── README.md
+│       # Official Python client library.
+│
+├── scripts/
+│   ├── build.sh
+│   ├── test.sh
+│   └── release.sh
+│   # Utility scripts for building, testing, and releasing HelixDB.
+│
+├── tests/
+│   ├── integration/
+│   │   ├── http_tests.go
+│   │   └── recovery_tests.go
+│   │
+│   └── unit/
+│       ├── wal_test.go
+│       ├── index_test.go
+│       └── storage_test.go
+│   # Unit and integration tests.
+│
+└── examples/
+    ├── node/
+    │   └── basic_usage.js
+    └── python/
+        └── basic_usage.py
+    # Example applications demonstrating how to use HelixDB.
