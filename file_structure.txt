@@ -59,8 +59,9 @@ HelixDB/
 │   ├── openapi.yaml
 │   └── examples/
 │       ├── create_document.json
-│       ├── query.json
-│       └── delete_document.json
+│       ├── delete_document.json
+│       ├── error_response.json
+│       └── query.json
 │   # API documentation and example payloads.
 │
 ├── clients/
