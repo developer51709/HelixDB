@@ -1,0 +1,5 @@
+{
+  "filter": { "username": "alice" },
+  "limit": 10,
+  "offset": 0
+}
