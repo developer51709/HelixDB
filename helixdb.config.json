@@ -1,0 +1,8 @@
+// this is an example config.json file for the helixdb package
+{
+  "dbname": "example_database",
+  "dbpath": "path/to/database",
+  "autobackup": true,
+  "backupinterval": 3600,
+  "backupdir": "path/to/backups",
+}
