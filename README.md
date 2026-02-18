@@ -1,6 +1,9 @@
 # **HelixDB**
 ### *A lightweight, local‑first database engine built for modern applications.*
 
+> **NOTICE:**<br>
+> HelixDB is a side project and may not get updated very often since I have other projects that have a higher priority and this is closer to the bottom of the list however I will try to release updates at least every few months and contributions are welcome as long as they help fix a known issue or improve performance in some way. — **Nyxen**
+
 HelixDB is an open‑source, file‑backed JSON database designed to be simple enough for local development yet powerful enough to support high‑traffic, production‑grade applications. It emphasizes reliability, corruption resistance, built‑in backup and recovery, and seamless integration with both Node.js and Python.
 
 HelixDB runs as a single binary with zero configuration required — but offers deep customization through an optional `helixdb.config.json` file.
