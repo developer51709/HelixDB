@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/helixdb/helixdb/internal/config"
-	"github.com/helixdb/helixdb/internal/storage"
+	"github.com/developer51709/helixdb/internal/config"
+	"github.com/developer51709/helixdb/internal/storage"
 )
 
 type Server struct {
