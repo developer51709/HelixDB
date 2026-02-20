@@ -1,8 +1,30 @@
-// this is an example config.json file for the helixdb package
 {
-  "dbname": "example_database",
-  "dbpath": "path/to/database",
-  "autobackup": true,
-  "backupinterval": 3600,
-  "backupdir": "path/to/backups",
+  "server": {
+    "port": 5000,
+    "host": "0.0.0.0"
+  },
+  "storage": {
+    "dataFile": "./data/helix.db",
+    "walDirectory": "./data/wal",
+    "autoCompact": true,
+    "compactThresholdMB": 128
+  },
+  "backup": {
+    "enabled": false,
+    "mode": "incremental",
+    "directory": "./backups",
+    "intervalMinutes": 30
+  },
+  "recovery": {
+    "autoRecover": true,
+    "verifyChecksums": true
+  },
+  "logging": {
+    "level": "info",
+    "file": ""
+  },
+  "security": {
+    "requireAuth": false,
+    "token": ""
+  }
 }
