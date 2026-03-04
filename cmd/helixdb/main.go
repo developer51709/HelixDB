@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/helixdb/helixdb/internal/config"
-	"github.com/helixdb/helixdb/internal/server"
-	"github.com/helixdb/helixdb/internal/storage"
+	"github.com/developer51709/helixdb/internal/config"
+	"github.com/developer51709/helixdb/internal/server"
+	"github.com/developer51709/helixdb/internal/storage"
 )
 
 func main() {
