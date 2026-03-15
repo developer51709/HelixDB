@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "helixdb"
+version = "1.0.0"
+authors = [
+    {name = "developer51709", email = "developer51709@proton.me"}
+]
+description = "The official HelixDB Python client"
+readme = "README.md"
+requires-python = ">=3.7"
